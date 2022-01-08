@@ -475,7 +475,7 @@ public class BaseSetup {
         MobileElement ParcayiSil = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(By.id("com.kerem.yedekparca:id/button4")));
         ParcayiSil.click();
         MobileElement errorMassage = (MobileElement) driver.findElement(By.xpath("/hierarchy/android.widget.Toast"));
-        assertEquals(errorMassage.getText(), "Parça Adı kısmı boş geçilemez");
+        assertEquals(errorMassage.getText(), "Parça adı giriniz!");
 
     }
     public void PracaYoksa() throws InterruptedException{
@@ -501,7 +501,7 @@ public class BaseSetup {
         MobileElement ParcayiSil = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(By.id("com.kerem.yedekparca:id/button4")));
         ParcayiSil.click();
         MobileElement errorMassage = (MobileElement) driver.findElement(By.xpath("/hierarchy/android.widget.Toast"));
-        assertEquals(errorMassage.getText(), "Parça markası kısmı boş geçilemez");
+        assertEquals(errorMassage.getText(), "Parça adı giriniz!");
     }
     public void MarkaYoksa() throws InterruptedException{
         MobileElement parcaSil = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(By.id("com.kerem.yedekparca:id/parca_sil")));
